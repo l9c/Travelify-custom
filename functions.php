@@ -105,6 +105,19 @@ function travelify_setup() {
 	 */
 	//disable editor style
 	//add_editor_style();
+
+	//multi-post-thumbnails plugin https://github.com/voceconnect/multi-post-thumbnails
+	if (class_exists('MultiPostThumbnails')) {
+		add_image_size( 'post-thumb', 227, 140, true );
+		new MultiPostThumbnails(
+			array(
+				'label' => 'Post Thumbnail',
+				'id' => 'post-thumbnail',
+				'post_type' => 'post'
+			)
+		);
+	}
+
 }
 endif; // travelify_setup
 
