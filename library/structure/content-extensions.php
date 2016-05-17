@@ -20,6 +20,12 @@ function travelify_content() {
 	if( empty( $layout ) || is_archive() || is_search() || is_home() ) {
 		$layout = 'default';
 	}
+
+	//layout customizing
+	if (is_category(array('Products'))) {
+		$layout = 'nosidebar';
+	}
+
    if( 'default' == $layout ) {
 		$themeoption_layout = $options[ 'default_layout' ];
 
