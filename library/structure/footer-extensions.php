@@ -36,7 +36,7 @@ function travelify_footer_info() {
 	if (function_exists('get_custom')) {
 		$icp = get_custom('site_icp_number');
 		if (!empty($icp)){
-			$icp .= '<i class="fa fa-shield" aria-hidden="true"></i>';
+			$icp .= ' <i class="fa fa-shield" aria-hidden="true"></i>';
 		}
 	}
    echo '<div class="copyright">'.__( 'Copyright &copy;', 'travelify' ).' '.date('Y').' '.travelify_site_link().' '.$icp.'
