@@ -88,10 +88,98 @@ function travelify_theloop() {
 	elseif( is_search() ) {
 		travelify_theloop_for_search();
 	}
+	//theloop for products
+	elseif ( is_category(array('products')) ) {
+		travelify_theloop_for_products();
+	}
 	else {
 		travelify_theloop_for_archive();
 	}
 }
+
+/****************************************************************************************/
+
+if ( ! function_exists( 'travelify_theloop_for_products' ) ) :
+	/**
+	 * Function to show the product loop content.
+	 */
+	function travelify_theloop_for_products() {
+		global $post;
+
+		if( have_posts() ) {
+			while( have_posts() ) {
+				the_post();
+
+				do_action( 'travelify_before_post' );
+				?>
+				<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<article>
+
+						<?php do_action( 'travelify_before_post_header' ); ?>
+
+						<?php do_action( 'travelify_after_post_header' ); ?>
+
+						<?php do_action( 'travelify_before_post_content' ); ?>
+
+						<?php if (class_exists('MultiPostThumbnails')) :
+							MultiPostThumbnails::the_post_thumbnail(
+								get_post_type(),
+								'post-thumbnail',
+								the_ID(),
+								'post-thumb'
+							);
+						endif; ?>
+						<header class="entry-header">
+							<h2 class="entry-title">
+								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><?php the_title(); ?></a>
+							</h2><!-- .entry-title -->
+						</header>
+
+						<div class="entry-content clearfix">
+							<?php
+							if ( function_exists('is_bbpress') && is_bbpress() ){
+								the_content();
+							}else {
+								the_excerpt();
+							}
+							?>
+						</div>
+
+						<?php do_action( 'travelify_after_post_content' ); ?>
+
+						<?php do_action( 'travelify_before_post_meta' ); ?>
+
+						<div class="entry-meta-bar clearfix">
+							<div class="entry-meta">
+								<?php travelify_posted_on(); ?>
+								<?php if( has_category() ) { ?>
+									<span class="category"><?php the_category(', '); ?></span>
+								<?php } ?>
+								<?php if ( comments_open() ) { ?>
+									<span class="comments"><?php comments_popup_link( __( 'No Comments', 'travelify' ), __( '1 Comment', 'travelify' ), __( '% Comments', 'travelify' ), '', __( 'Comments Off', 'travelify' ) ); ?></span>
+								<?php } ?>
+							</div><!-- .entry-meta -->
+							<?php
+							echo '<a class="readmore" href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">'.__( 'Read more', 'travelify' ).'</a>';
+							?>
+						</div>
+
+						<?php do_action( 'travelify_after_post_meta' ); ?>
+
+					</article>
+				</section>
+				<?php
+				do_action( 'travelify_after_post' );
+
+			}
+		}
+		else {
+			?>
+			<h1 class="entry-title"><?php _e( 'No Posts Found.', 'travelify' ); ?></h1>
+			<?php
+		}
+	}
+endif;
 
 /****************************************************************************************/
 
