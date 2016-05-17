@@ -125,7 +125,7 @@ if ( ! function_exists( 'travelify_theloop_for_products' ) ) :
 							MultiPostThumbnails::the_post_thumbnail(
 								get_post_type(),
 								'post-thumbnail',
-								the_ID(),
+								null,
 								'post-thumb'
 							);
 						endif; ?>
@@ -135,17 +135,17 @@ if ( ! function_exists( 'travelify_theloop_for_products' ) ) :
 							</h2><!-- .entry-title -->
 						</header>
 
-						<div class="entry-content clearfix">
-							<?php
-							if ( function_exists('is_bbpress') && is_bbpress() ){
-								the_content();
-							}else {
-								the_excerpt();
-							}
-							?>
-						</div>
+<!--						<div class="entry-content clearfix">-->
+<!--							--><?php
+//							if ( function_exists('is_bbpress') && is_bbpress() ){
+//								the_content();
+//							}else {
+//								the_excerpt();
+//							}
+//							?>
+<!--						</div>-->
 
-						<?php do_action( 'travelify_after_post_content' ); ?>
+<!--						--><?php //do_action( 'travelify_after_post_content' ); ?>
 
 						<?php do_action( 'travelify_before_post_meta' ); ?>
 
