@@ -103,7 +103,8 @@ function travelify_setup() {
 	/**
 	 * This theme supports add_editor_style
 	 */
-	add_editor_style();
+	//disable editor style
+	//add_editor_style();
 }
 endif; // travelify_setup
 
