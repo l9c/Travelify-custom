@@ -452,7 +452,20 @@ function travelify_options_register_theme_customizer($wp_customize)
         'description' => __('Enter URLs for your social networks e.g.', 'travelify') . 'https://twitter.com/colorlib'
     ));
 
-        $social_links = array( 'Facebook' => 'social_facebook', 'Twitter' => 'social_twitter', 'Google-Plus' => 'social_googleplus', 'Pinterest' => 'social_pinterest', 'YouTube' => 'social_youtube', 'Vimeo' => 'social_vimeo', 'LinkedIn' => 'social_linkedin', 'Flickr' => 'social_flickr', 'Tumblr' => 'social_tumblr', 'Instagram' => 'social_instagram', 'RSS' => 'social_rss', 'GitHub' => 'social_github' );
+	$social_links = array(
+		'Facebook' => 'social_facebook', 
+		'Twitter' => 'social_twitter', 
+		'Wechat' => 'social_googleplus', 
+		'Weibo' => 'social_pinterest', 
+		//'YouTube' => 'social_youtube', 
+		//'Vimeo' => 'social_vimeo', 
+		//'LinkedIn' => 'social_linkedin', 
+		//'Flickr' => 'social_flickr', 
+		'QQ' => 'social_tumblr', 
+		//'Instagram' => 'social_instagram', 
+		//'RSS' => 'social_rss', 
+		//'GitHub' => 'social_github'
+	 );
         foreach ($social_links as $key => $val) {
 
             $wp_customize->add_setting('travelify_theme_options[' . $val . ']', array(

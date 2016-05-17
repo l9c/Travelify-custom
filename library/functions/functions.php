@@ -27,6 +27,9 @@ function travelify_scripts_styles_method() {
 		wp_enqueue_style( 'travelify-rtl-style', get_template_directory_uri() . '/rtl.css', false );
 	}
 
+	/***** social icon overriding******/
+	wp_enqueue_script( 'aaermes_social_customize', get_template_directory_uri() . '/library/js/social_custom.js', array( 'jquery' ) );
+
 	/**
 	 * Adds JavaScript to pages with the comment form to support
 	 * sites with threaded comments (when in use).

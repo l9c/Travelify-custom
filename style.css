@@ -513,11 +513,22 @@ a.more-link:hover {
 	margin-top: 15px;
 }
 .hgroup-wrap {
+	position:relative;
 	padding-top: 15px;
 	padding-bottom: 35px;
 }
 .hgroup-wrap a {
 	display: block;
+}
+.lang-buttons {
+	position:absolute;
+	top:10px;
+	right:5px;
+}
+.lang-buttons a.qtranxs_flag {
+	display:inline-block;
+	width:18px;
+	height:12px;
 }
 #site-logo {
 	float: left;
@@ -1895,6 +1906,11 @@ article {
 	.hgroup-right .social-icons {
 		display: none;
 	}
+	.lang-buttons {
+		position:absolute;
+		top:10px;
+		right:10px;
+	}
 	#site-logo {
 		margin-top: 25px;
 	}
@@ -2011,6 +2027,11 @@ article {
 	}
 	.hgroup-right {
 		margin-top: 37px;
+	}	
+	.lang-buttons {
+		position:absolute;
+		top:10px;
+		right:10px;
 	}
 	#site-logo {
 		margin-top: 30px;
@@ -2058,4 +2079,34 @@ article {
 	top: 5px;
 	width: auto;
 	z-index: 100000; /* Above WP toolbar. */
+}
+
+
+/****override*****/
+.social-icon-override .fa {
+	font-size:18px;
+	position:absolute;
+	top:3px;
+	left:4px;
+}
+.social-icons ul li a.social-icon-override {
+	width:21px;
+	height:21px;
+	position:relative;
+}
+.social-icons ul li a.social-icon-override:before {
+	content: '';
+}
+.social-icons ul li.google-plus a:hover {
+	background: #3DB22E;/*weixin*/
+}
+.social-icons ul li.pinterest a:hover {
+	background: #D32D0A;/*weibo*/
+}
+.social-icons ul li.tumblr a:hover {
+	background: #2191D7;/*qq*/
+}
+
+#site-description {
+	color: #ef7a21;
 }

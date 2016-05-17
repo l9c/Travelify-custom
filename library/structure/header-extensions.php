@@ -80,6 +80,7 @@ function travelify_headerdetails() {
 
 	<div class="container clearfix">
 		<div class="hgroup-wrap clearfix">
+<div class="lang-buttons"><a class="qtranxs_flag qtranxs_flag_en" href="javascript:changeLang('en');"></a> <a title="" class="qtranxs_flag qtranxs_flag_zh" href="javascript:changeLang('zh');"></a></div>
 					<section class="hgroup-right">
 						<?php travelify_socialnetworks( $flag ); ?>
 					</section><!-- .hgroup-right -->
@@ -102,6 +103,7 @@ function travelify_headerdetails() {
 									<img src="<?php echo $options[ 'header_logo' ]; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 								</a>
 							</p>
+							<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 						<?php
 						}
 						?>

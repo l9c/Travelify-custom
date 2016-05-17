@@ -31,7 +31,12 @@
 		 */
 		wp_head();
 	?>
-
+<script type="text/javascript">
+function changeLang(lang) {
+	var url = window.location.toString();
+	window.location = url.replace(/zh|en/, lang);
+}
+</script>
 </head>
 
 <body <?php body_class(); ?>>
