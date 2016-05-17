@@ -23,7 +23,7 @@ function travelify_content() {
 
 	//layout customizing
 	if (is_category(array('Products'))) {
-		$layout = 'nosidebar';
+		$layout = 'no-sidebar-full-width';
 	}
 
    if( 'default' == $layout ) {
