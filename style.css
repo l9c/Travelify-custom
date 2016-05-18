@@ -2123,9 +2123,12 @@ article {
 	 margin-right: 0;
  }
  #content .post.category-products .entry-title {
-
+	text-align: center;
+	 line-height: 20px;
+	 height: 20px;
+	 overflow: hidden;
  }
  #content .post.category-products .entry-title, #content .post.category-products .entry-title a{
-	 font-size: 14px;
+	 font-size: 16px;
 	 padding:0;
  }
