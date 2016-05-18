@@ -2119,6 +2119,9 @@ article {
 	 margin: 0 20px 20px 0;
 	 padding: 0;
  }
+ .archive #content .post.category-products.first-thumb {
+	 clear:both;
+ }
  .archive #content .post.category-products.last-thumb {
 	 margin-right: 0;
  }

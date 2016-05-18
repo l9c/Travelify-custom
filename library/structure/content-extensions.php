@@ -110,10 +110,14 @@ if ( ! function_exists( 'travelify_theloop_for_products' ) ) :
 				?>
 
                 <?php
-                $is_end_of_row = (( $wp_query->current_post + 1 ) % 4 === 0 )? true:false;
+                $is_row_start = (( $wp_query->current_post + 1 ) % 4 === 1 )? true:false;
+                $is_row_end = (( $wp_query->current_post + 1 ) % 4 === 0 )? true:false;
+                $post_class = '';
+                $post_class = $post_class.($is_row_start? ' first-thumb':'');
+                $post_class = $post_class.($is_row_end? ' last-thumb':'');
                 ?>
 
-				<section id="post-<?php the_ID(); ?>" <?php post_class($is_end_of_row? 'last-thumb':null); ?>>
+				<section id="post-<?php the_ID(); ?>" <?php post_class($post_class); ?>>
 					<article>
 
                         <?php do_action( 'travelify_before_post_header' ); ?>
