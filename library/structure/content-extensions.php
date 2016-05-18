@@ -81,20 +81,16 @@ function travelify_theloop() {
 		else {
 			travelify_theloop_for_page();
 		}
-	}
-	elseif( is_single() ) {
-		travelify_theloop_for_single();
-	}
-	elseif( is_search() ) {
-		travelify_theloop_for_search();
-	}
-	//theloop for products
-	elseif ( is_category(array('products')) ) {
-		travelify_theloop_for_products();
-	}
-	else {
-		travelify_theloop_for_archive();
-	}
+    } elseif (is_single()) {
+        travelify_theloop_for_single();
+    } elseif (is_search()) {
+        travelify_theloop_for_search();
+    } //theloop for products
+    elseif (is_category(array('products'))) {
+        travelify_theloop_for_products();
+    } else {
+        travelify_theloop_for_archive();
+    }
 }
 
 /****************************************************************************************/
@@ -122,12 +118,12 @@ if ( ! function_exists( 'travelify_theloop_for_products' ) ) :
 						<?php do_action( 'travelify_before_post_content' ); ?>
 
 						<?php if (class_exists('MultiPostThumbnails')) :
-							MultiPostThumbnails::the_post_thumbnail(
-								get_post_type(),
-								'post-thumbnail',
-								null,
-								'post-thumb'
-							);
+                            MultiPostThumbnails::the_post_thumbnail(
+                                get_post_type(),
+                                'post-thumbnail',
+                                null,
+                                'post-thumb'
+                            );
 						endif; ?>
 						<header class="entry-header">
 							<h2 class="entry-title">
