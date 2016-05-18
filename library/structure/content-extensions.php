@@ -111,30 +111,27 @@ if ( ! function_exists( 'travelify_theloop_for_products' ) ) :
 				<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<article>
 
-
-
-
-
-						<?php if (class_exists('MultiPostThumbnails')) :
-                            MultiPostThumbnails::the_post_thumbnail(
-                                get_post_type(),
-                                'post-thumbnail',
-                                null,
-                                'post-thumb'
-                            );
-						endif; ?>
-
                         <?php do_action( 'travelify_before_post_header' ); ?>
 						<header class="entry-header">
+                            <a href="<?php the_permalink(); ?>" class="post-thumb-link" title="<?php the_title_attribute();?>">
+                                <?php if (class_exists('MultiPostThumbnails')) :
+                                    MultiPostThumbnails::the_post_thumbnail(
+                                        get_post_type(),
+                                        'post-thumbnail',
+                                        null,
+                                        'post-thumb'
+                                    );
+                                endif; ?>
+                            </a>
 							<h2 class="entry-title">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><?php the_title(); ?></a>
 							</h2><!-- .entry-title -->
 						</header>
                         <?php do_action( 'travelify_after_post_header' ); ?>
 
-                        <!--						--><?php //do_action( 'travelify_before_post_content' ); ?>
+                        <?php //do_action( 'travelify_before_post_content' ); ?>
 <!--						<div class="entry-content clearfix">-->
-<!--							--><?php
+                            <?php
 //							if ( function_exists('is_bbpress') && is_bbpress() ){
 //								the_content();
 //							}else {
@@ -142,8 +139,7 @@ if ( ! function_exists( 'travelify_theloop_for_products' ) ) :
 //							}
 //							?>
 <!--						</div>-->
-
-<!--						--><?php //do_action( 'travelify_after_post_content' ); ?>
+                        <?php //do_action( 'travelify_after_post_content' ); ?>
 
 						<?php do_action( 'travelify_before_post_meta' ); ?>
 
