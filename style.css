@@ -2126,7 +2126,7 @@ article {
 	 clear:both;
  }
  .archive #content .post.category-products.last-thumb {
-	 margin-right: 0;
+	 margin-right: -1px;
  }
  .archive #content .post.category-products .entry-title {
 	text-align: center;
