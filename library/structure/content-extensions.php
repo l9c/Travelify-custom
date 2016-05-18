@@ -108,7 +108,12 @@ if ( ! function_exists( 'travelify_theloop_for_products' ) ) :
 
 				do_action( 'travelify_before_post' );
 				?>
-				<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+                <?php
+                $is_end_of_row = (( $wp_query->current_post + 1 ) % 4 === 0 )? true:false;
+                ?>
+
+				<section id="post-<?php the_ID(); ?>" <?php post_class($is_end_of_row? 'last-thumb':null); ?>>
 					<article>
 
                         <?php do_action( 'travelify_before_post_header' ); ?>
