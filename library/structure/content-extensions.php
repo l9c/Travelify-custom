@@ -100,7 +100,7 @@ if ( ! function_exists( 'travelify_theloop_for_products' ) ) :
 	 * Function to show the product loop content.
 	 */
 	function travelify_theloop_for_products() {
-		global $post;
+		global $post, $wp_query;
 
 		if( have_posts() ) {
 			while( have_posts() ) {
