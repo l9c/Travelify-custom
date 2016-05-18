@@ -22,7 +22,7 @@ function travelify_content() {
 	}
 
 	//layout customizing
-	if ('default' == $layout && (is_category(array('products')) || is_page()) || (is_single() && in_category(array('products')))) {
+	if ('default' == $layout && (is_category(array('products')) || is_page() || (is_single() && in_category(array('products'))))) {
 		$layout = 'no-sidebar-full-width';
 	}
 
