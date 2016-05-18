@@ -157,7 +157,7 @@ if ( ! function_exists( 'travelify_theloop_for_products' ) ) :
 <!--								--><?php //if ( comments_open() ) { ?>
 <!--									<span class="comments">--><?php //comments_popup_link( __( 'No Comments', 'travelify' ), __( '1 Comment', 'travelify' ), __( '% Comments', 'travelify' ), '', __( 'Comments Off', 'travelify' ) ); ?><!--</span>-->
 <!--								--><?php //} ?>
-<!--							</div><!-- .entry-meta -->-->
+<!--							</div>--><!-- .entry-meta -->
 <!--							--><?php
 //							echo '<a class="readmore" href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">'.__( 'Read more', 'travelify' ).'</a>';
 //							?>
