@@ -2111,24 +2111,24 @@ article {
 	color: #ef7a21;
 }
 
- /** product **/
- #content .post.category-products {
+ /** product list **/
+ .archive .post.category-products {
 	 float:left;
 	 width:227px;
 	 height: 160px;
 	 margin: 0 20px 20px 0;
 	 padding: 0;
  }
- #content .post.category-products.last-thumb {
+ .archive .post.category-products.last-thumb {
 	 margin-right: 0;
  }
- #content .post.category-products .entry-title {
+ .archive .post.category-products .entry-title {
 	text-align: center;
 	 line-height: 20px;
 	 height: 20px;
 	 overflow: hidden;
  }
- #content .post.category-products .entry-title, #content .post.category-products .entry-title a{
+ .archive .post.category-products .entry-title, #content .post.category-products .entry-title a{
 	 font-size: 16px;
 	 padding:0;
  }
