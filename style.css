@@ -2112,29 +2112,29 @@ article {
 }
 
  /** product list **/
- .archive #content .post.category-products {
+ .archive #content .post.product-thumbs {
 	 float:left;
 	 width:227px;
 	 height: 170px;
 	 margin: 0 20px 20px 0;
 	 padding: 0;
  }
- .archive #content .post.category-products {
+ .archive #content .post.product-thumbs {
 	 border: 0;
  }
- .archive #content .post.category-products.first-thumb {
+ .archive #content .post.product-thumbs.first-thumb {
 	 clear:both;
  }
- .archive #content .post.category-products.last-thumb {
+ .archive #content .post.product-thumbs.last-thumb {
 	 margin-right: -1px;
  }
- .archive #content .post.category-products .entry-title {
+ .archive #content .post.product-thumbs .entry-title {
 	text-align: center;
 	 line-height: 30px;
 	 height: 30px;
 	 overflow: hidden;
  }
- .archive #content .post.category-products .entry-title, #content .post.category-products .entry-title a{
+ .archive #content .post.product-thumbs .entry-title, #content .post.product-thumbs .entry-title a{
 	 font-size: 16px;
 	 padding:0;
  }
