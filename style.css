@@ -2144,5 +2144,5 @@ article {
 
  /**contace form**/
  form.form10 .wdform-page-and-images {
-	 border-top-width: 0;
+	 border-top: 0 !important;
  }
