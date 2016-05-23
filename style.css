@@ -2142,7 +2142,25 @@ article {
 	 padding:0;
  }
 
- /**contace form**/
+ /**contact form**/
  form.form10 .wdform-page-and-images {
 	 border-top: 0 !important;
+ }
+ form.form10 .warning, form.form10.error {
+	 background-color: #f5f4f4;
+	 border: 1px solid rgba(255,106,19,1);
+	 color:rgba(255,106,19,1);
+	 margin-bottom: 10px;
+	 padding: 5px;
+ }
+ form.form10 .wdform-ch-rad-label {
+	 margin: -4px 30px 5px 5px;
+ }
+ form.form10 .button-submit {
+	 background-color: rgba(255, 106, 19, 1);
+	 border: 0;
+	 border-bottom: 3px #c0500f solid;
+	 margin: 5px 0 0 -5px;
+	 min-width: 150px;
+	 text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
  }
