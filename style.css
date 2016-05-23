@@ -2083,6 +2083,9 @@ article {
 
 
 /****override*****/
+.txt-blue {color:rgba(48,58,178,1)}
+.txt-orange {color:rgba(255,106,19,1)}
+
 .social-icon-override .fa {
 	font-size:18px;
 	position:absolute;
