@@ -2142,21 +2142,22 @@ article {
 	 padding:0;
  }
 
- /**contact form**/
- form.form10 .wdform-page-and-images {
+ /**contact form id 10, 12**/
+
+ form.form10 .wdform-page-and-images, form.form12 .wdform-page-and-images {
 	 border-top: 0 !important;
  }
- div.form10 .warning, form.form10.error {
+ div.form10 .warning, form.form10.error, div.form12 .warning, form.form12.error {
 	 background-color: #f5f4f4;
 	 border: 1px solid rgba(255,106,19,1);
 	 color:rgba(255,106,19,1);
 	 margin-bottom: 10px;
 	 padding: 5px;
  }
- form.form10 .wdform-ch-rad-label {
+ form.form10 .wdform-ch-rad-label, form.form12 .wdform-ch-rad-label {
 	 margin: -4px 30px 5px 5px;
  }
- form.form10 .button-submit {
+ form.form10 .form-contact-submit .button-submit,form.form12 .form-contact-submit .button-submit {
 	 background-color: rgba(255, 106, 19, 1);
 	 border: 0;
 	 border-bottom: 3px #c0500f solid;
