@@ -2146,7 +2146,7 @@ article {
  form.form10 .wdform-page-and-images {
 	 border-top: 0 !important;
  }
- form.form10 .warning, form.form10.error {
+ div.form10 .warning, form.form10.error {
 	 background-color: #f5f4f4;
 	 border: 1px solid rgba(255,106,19,1);
 	 color:rgba(255,106,19,1);
