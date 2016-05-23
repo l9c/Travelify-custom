@@ -554,7 +554,7 @@ a.more-link:hover {
 	font: 14px helvetica, sans-serif;
 	line-height: 20px;
 	color: #999;
-	font-weight: 200;
+	font-weight: bold;
 }
 .hgroup-right {
 	float: right;
