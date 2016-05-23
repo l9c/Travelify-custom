@@ -865,16 +865,16 @@ function travelify_next_previous_post_link() {
 		if( is_attachment() ) {
 		?>
 			<ul class="default-wp-page clearfix">
-				<li class="previous"><?php previous_image_link( false, __( '&laquo; Previous', 'travelify' ) ); ?></li>
-				<li class="next"><?php next_image_link( false, __( 'Next &raquo;', 'travelify' ) ); ?></li>
+				<li class="previous"><?php previous_image_link( false, __( '&laquo; Previous', 'travelify' ), true ); ?></li>
+				<li class="next"><?php next_image_link( false, __( 'Next &raquo;', 'travelify' ), true ); ?></li>
 			</ul>
 		<?php
 		}
 		else {
 		?>
 			<ul class="default-wp-page clearfix">
-				<li class="previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'travelify' ) . '</span> %title' ); ?></li>
-				<li class="next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'travelify' ) . '</span>' ); ?></li>
+				<li class="previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'travelify' ) . '</span> %title', true ); ?></li>
+				<li class="next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'travelify' ) . '</span>', true ); ?></li>
 			</ul>
 		<?php
 		}
