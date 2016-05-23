@@ -2141,3 +2141,8 @@ article {
 	 font-size: 16px;
 	 padding:0;
  }
+
+ /**contace form**/
+ .form10 .wdform-page-and-images {
+	 border-top-width: 0;
+ }
