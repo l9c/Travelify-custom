@@ -29,6 +29,8 @@ function travelify_scripts_styles_method() {
 
 	/***** social icon overriding******/
 	wp_enqueue_script( 'aaermes_social_customize', get_template_directory_uri() . '/library/js/social_custom.js', array( 'jquery' ) );
+	/***** content format ******/
+	wp_enqueue_script( 'aaermes_content_format', get_template_directory_uri() . '/library/js/content_format.js', array( 'jquery' ) );
 
 	/**
 	 * Adds JavaScript to pages with the comment form to support

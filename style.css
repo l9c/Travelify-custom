@@ -2142,6 +2142,9 @@ article {
 	 padding:0;
  }
 
+ /**content format fix**/
+ .paragraph-zh {text-indent:2em;}
+
  /**contact form id 10, 12**/
 
  .form10 .wdform_page, .form12 .wdform_page {
