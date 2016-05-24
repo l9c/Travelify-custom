@@ -2145,7 +2145,7 @@ article {
  /**contact form id 10, 12**/
 
  .form10 .wdform_page, .form12 .wdform_page {
-	 padding-left: 0;
+	 padding-left: 0 !important;
  }
 
  form.form10 .wdform-page-and-images, form.form12 .wdform-page-and-images {
