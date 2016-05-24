@@ -123,14 +123,16 @@ if ( ! function_exists( 'travelify_theloop_for_products' ) ) :
                         <?php do_action( 'travelify_before_post_header' ); ?>
 						<header class="entry-header">
                             <a href="<?php the_permalink(); ?>" class="post-thumb-link" title="<?php the_title_attribute();?>">
-                                <?php if (class_exists('MultiPostThumbnails')) :
-                                    MultiPostThumbnails::the_post_thumbnail(
-                                        get_post_type(),
-                                        'post-thumbnail',
-                                        null,
-                                        'post-thumb'
-                                    );
-                                endif; ?>
+                                <?php if (class_exists('MultiPostThumbnails') && MultiPostThumbnails::has_post_thumbnail(get_post_type(), 'post-thumbnail')) {
+									MultiPostThumbnails::the_post_thumbnail(
+										get_post_type(),
+										'post-thumbnail',
+										null,
+										'post-thumb'
+									);
+								} else {
+									echo '<img width="227" height="140" alt="thumbnail not set" class="attachment-post-thumb size-post-thumb" src="'.get_template_directory_uri().'/images/default-thumbnail-227-140.jpg">';
+								} ?>
                             </a>
 							<h2 class="entry-title">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><?php the_title(); ?></a>
