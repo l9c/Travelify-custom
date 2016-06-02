@@ -210,7 +210,7 @@ function travelify_socialnetworks( $flag ) {
 			</ul>
 			</div><!-- .social-icons -->';
 
-		set_transient( 'travelify_socialnetworks', $travelify_socialnetworks, 86940 );
+		set_transient( 'travelify_socialnetworks', $travelify_socialnetworks, 60 );
 	}
 	echo $travelify_socialnetworks;
 }
