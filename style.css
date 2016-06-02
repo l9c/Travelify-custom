@@ -2124,6 +2124,8 @@ img.hover-qrcode-img {
 	padding:0;
 	max-width: none;
 	display: none;
+	width: 130px;
+	height: 130px;
 }
 
 
