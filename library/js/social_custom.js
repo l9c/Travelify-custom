@@ -16,9 +16,9 @@ jQuery(document).ready(function(){
 
 	jQuery('.social-icons ul li.google-plus a').hover(
 		function() {
-			jQuery('.hover-qrcode-img').css('display','inline-block');
+			jQuery('.hover-qrcode-img').fadeIn();
 		}, function() {
-			jQuery('.hover-qrcode-img').css('display','none');
+			jQuery('.hover-qrcode-img').fadeOut();
 		}
 	);
 });
