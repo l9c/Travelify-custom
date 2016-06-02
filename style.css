@@ -2121,6 +2121,7 @@ img.hover-qrcode-img {
 	z-index: 1000;
 	background: #fff;
 	border:1px #aaa solid;
+	box-shadow: 0 0 3px #ccc;
 	padding:0;
 	max-width: none;
 	display: none;
