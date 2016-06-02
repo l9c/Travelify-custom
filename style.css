@@ -2117,7 +2117,7 @@ article {
 img.hover-qrcode-img {
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 25px;
 	z-index: 1000;
 	background: #fff;
 	border:1px #aaa solid;
