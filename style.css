@@ -2122,6 +2122,7 @@ img.hover-qrcode-img {
 	background: #fff;
 	border:1px #aaa solid;
 	padding:0;
+	max-width: none;
 	display: none;
 }
 
