@@ -202,7 +202,7 @@ function travelify_socialnetworks( $flag ) {
 				foreach( $social_links as $key => $value ) {
 					if ( !empty( $options[ $value ] ) ) {
 						$travelify_socialnetworks .=
-							'<li class="'.strtolower($key).'"><a href="'.esc_url( $options[ $value ] ).'" title="'.sprintf( esc_attr__( '%1$s on %2$s', 'travelify' ), get_bloginfo( 'name' ), $key ).'" target="_blank"></a></li>';
+							'<li class="'.strtolower($key).'"><a href="'.esc_url( $options[ $value ] ).'" title="'.sprintf( esc_attr__( '%1$s on %2$s', 'travelify' ), get_bloginfo( 'name' ), $key ).'" tar__get="_blank"></a></li>';
 					}
 				}
 

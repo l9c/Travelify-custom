@@ -2114,6 +2114,18 @@ article {
 	background: #2191D7;/*qq*/
 }
 
+img.hover-qrcode-img {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+	background: #fff;
+	border:1px #aaa solid;
+	padding:0;
+	display: none;
+}
+
+
 #site-description {
 	color: #ef7a21;
 	font-size: 15px;
