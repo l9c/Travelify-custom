@@ -2084,8 +2084,8 @@ article {
 
 /****override*****/
  #site-description{
-	 /*margin-left: 20px;*/
-	 word-spacing: 12px;
+	 margin-left: 3px;
+	 word-spacing: 4px;
  }
 .txt-blue {color:rgba(48,58,178,1)}
 .txt-orange {color:rgba(255,106,19,1)}
